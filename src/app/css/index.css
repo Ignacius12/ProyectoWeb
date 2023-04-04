@@ -1,0 +1,528 @@
+html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f1f1f1;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+}
+
+.salida {
+    color: #633B54;
+    font-size: 1.5rem;
+}
+
+/*
+aqui va el header
+ */
+
+header {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: minmax(0, 4rem);
+    position: sticky;
+    top: 0;
+    background-color: #f1f1f1;
+    z-index: 98;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+
+}
+
+.contenedorMenu {
+    margin-right: 1rem;
+    padding: 0.2rem;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.iniciasesion {
+    padding: 10px;
+    height: 60%;
+
+}
+
+.logoGti {
+    padding: 5px;
+    height: 80%;
+
+}
+
+/*
+aqui termina header
+ */
+
+/*---------------------------------------------------------------------------------*/
+
+/*
+inicio de pagina principal
+*/
+.landin {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+h1{
+    font-size: 2rem;
+    margin:0 1.5rem;
+}
+.slogan {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #2B0124;
+    text-align: center;
+
+}
+
+.principal_Imagen {
+    display: flex;
+
+}
+
+.imgp {
+    width: 80%;
+    margin: 0 auto;
+}
+h2{
+    font-size: 1.3rem;
+    margin:0 1.5rem;
+}
+.slogan2 {
+    color: darkgrey;
+    font-size: 1rem;
+    text-align: center;
+}
+.morado{
+    color:#660555;
+}
+.cta {
+    width: 100%;
+    height: 5.2rem;
+    display: flex;
+    justify-content: center;
+
+}
+
+.botonInformate {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 800;
+    font-family: 'Source Sans Pro', sans-serif;
+    padding: 1rem 2.8rem;
+    border-radius: 400px;
+    position: absolute;
+    box-shadow: 0px 0px 5px 2px rgba(30, 8, 7, 0.44);
+    background-color: #660555;
+
+}
+
+.flechabajar {
+    display: flex;
+    justify-content: center;
+    height: 2rem;
+    animation: flecha-animada 1s ease-in-out infinite;
+
+}
+
+@keyframes flecha-animada {
+    from {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+.flechaBajar {
+    height: 2rem;
+}
+
+/*
+aqui termina la pagina principal
+ */
+
+
+/*--------------------------------------------------------------------------*/
+
+
+/*
+comienzan los diferentes div
+*/
+
+.contenedor {
+    margin: 0 1.5rem 3rem 1.5rem;
+    padding-top: 4rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.caja {
+    margin: 0.7rem;
+    background-color: #D19BC8;
+    border-radius: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.tituloh3 {
+    color: #f1f1f1;
+    text-align: center;
+}
+
+.textolargo {
+    color: #f1f1f1;
+
+    text-align: justify;
+    font-size: 0.8rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    margin-bottom: 1rem;
+
+}
+.cajafotofoto{
+    width: max-content;
+    height: max-content;
+
+}
+.foto{
+
+    width:90%;
+}
+
+/*
+aqui terminan los diferentes div
+ */
+/*---------------------------------------------------------------------------------*/
+/*
+aqui comienza el footer
+*/
+footer {
+    margin-top: 2rem;
+
+    height: 4rem;
+    display: flex;
+}
+
+.textofuter {
+    color: #2B0124;
+    width: 50%;
+    font-size: 0.5rem;
+}
+
+.textofuter .alvaro {
+    font-size: .3rem;
+}
+
+.redessociales {
+    margin: auto 1rem 0 auto;
+}
+
+.rrss {
+    padding: 1rem;
+    height: 2rem;
+
+}
+
+/*
+aqui termina el futer
+ */
+/*-------------------------------------------------------------------------------*/
+/*
+comienzo del loguin como span
+ */
+
+.contenedorlogin {
+    z-index: 99;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.login {
+    width: 80%;
+    max-width: 400px;
+    background-color: #f6f6f6;
+    border-radius: 2rem;
+    opacity: 100%;
+    flex-direction: column;
+
+}
+
+.cerr {
+    /* background-color: chocolate;*/
+    position: absolute;
+    width: 80%;
+    max-width: 400px;
+    height: 2rem;
+    display: flex;
+    flex-direction: row-reverse;
+
+}
+
+.cerrar {
+    padding: 1rem;
+    width: 1rem;
+    display: flex;
+    text-align: end;
+    justify-content: end;
+}
+.cc{
+    font-size: 2.5
+    rem;
+text-align: center;
+    color: #633B54;
+}
+
+.is {
+    text-align: center;
+    font-size: 2rem;
+    color: #633B54;
+}
+
+.formulario {
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.contenedornombre {
+    text-align: initial;
+    text-decoration: none;
+    margin: 0.2rem;
+    width: 85%;
+    height: 2rem;
+    border: #633B54 solid 2px;
+    border-radius: 5px;
+    background-color: #f6f6f6;
+    color: #633B54;
+    font: 400 1rem Helvetica;
+}
+
+.contenedorcontacta {
+    text-align: initial;
+    text-decoration: none;
+    margin: 0.4rem;
+    width: 85%;
+    height: 2rem;
+    border: #2B0124 solid 1px;
+    border-radius: 5px;
+    background-color: #E1C7DD;
+    color: #2B0124;
+    font: 400 1rem Helvetica;
+    padding: 0.5rem;
+}
+
+.contenedorcontacta-motivo{
+    text-align: initial;
+    text-decoration: none;
+    margin: 0.4rem;
+    width: 85%;
+    height: 5rem;
+    border: #2B0124 solid 1px;
+    border-radius: 5px;
+    background-color: #E1C7DD;
+    color: #2B0124;
+    font: 400 1rem Helvetica;
+    padding: 0.5rem;
+}
+
+::-webkit-input-placeholder {
+    color: #2B0124;
+}
+
+.botonlogin {
+
+    font-family: Helvetica;
+    color: white;
+    border: white;
+    width: 85%;
+    height: 2.2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 1rem;
+    border-radius: 8px;
+    position: relative;
+    box-shadow: 3px 5px 2px #999;
+    background-color: #633B54;
+
+}
+
+.botoncontacto {
+
+    font-family: Helvetica;
+    color: #660555;
+    border: 0;
+    width: 85%;
+    height: 2.2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 1rem;
+    border-radius: 8px;
+    box-shadow: #2B0124 1px 1px 1px;
+    position: relative;
+    background-color: #f1f1f1;
+
+}
+
+.olvidocontrasenya {
+    text-align: center;
+    text-decoration: none;
+    margin-top: 2rem;
+    font-size: 0.8rem;
+    color: #999999;
+}
+
+.olvidocontrasenya:hover {
+    color: #633B54;
+}
+
+/*
+final del login como span
+ */
+/*------------------------------------------------------------------------------------*/
+/*
+comienzo del formulario de contactanos
+ */
+#contacto {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.contacto_form {
+    width: 80%;
+    max-width: 400px;
+    background-color: #D19BC8;
+    border-radius: 2rem;
+    opacity: 100%;
+    flex-direction: column;
+    margin: auto;
+}
+
+.cn {
+    color: #660555;
+    text-align: center;
+    font-size: 3rem;
+}
+
+/*para tablet*/
+
+@media (min-width: 600px) {
+    .imgp {
+        margin: auto;
+        width: 80%;
+    }
+
+    .contenedor {
+        justify-content: space-between;
+    }
+
+    .tituloh3 {
+        font-size: 2rem;
+    }
+
+    .textolargo {
+        font-size: 1rem;
+    }
+    h1 {
+        font-size: 3.2rem;
+    }
+    h2{
+        font-size: 2rem;
+    }
+}
+
+@media (min-width: 1000px) {
+    .landin {
+        display: grid;
+        grid-template-rows: 40% 20% 30% 10%;
+        grid-template-columns: 50% 50%;
+        grid-template-areas: "principal Imagen"
+    "secundario Imagen"
+    "boton Imagen"
+    "flecha flecha";
+    }
+
+    .principal {
+        grid-area: principal;
+        font-size: 2rem;
+        padding: 1rem;
+    }
+
+    .principal_Imagen {
+        grid-area: Imagen;
+    }
+    h1 {
+        font-size: 3.5rem;
+    }
+    h2{
+        font-size: 2rem;
+    }
+    .secundario {
+        grid-area: secundario;
+        padding: 3rem;
+    }
+
+    .slogan2 {
+        font-size: 2rem;
+    }
+
+
+    .cta {
+        padding-top: 5rem;
+        grid-area: boton;
+        margin: auto auto 0 auto;
+    }
+
+    .botonInformate {
+        font-size: 1.5rem;
+        font-weight: 700;
+
+    }
+
+    .flechabajar {
+        grid-area: flecha;
+    }
+
+    .contenedor {
+        margin: 0 auto;
+        width: 90vw;
+        height: 90vh;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .caja {
+        width: 20%;
+        height: 70%;
+    }
+
+    .textofuter {
+        font-size: 1rem;
+    }
+
+
+}

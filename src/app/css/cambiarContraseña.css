@@ -1,0 +1,118 @@
+html{
+    background-color:#f1f1f1;
+    margin: 0;
+    font-size: 16px;
+
+    padding: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.formularios{
+    display:flex;
+    flex-direction: column;
+}
+header {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: minmax(0, 4rem);
+    position: sticky;
+    top: 0;
+    background-color: #f1f1f1;
+    z-index: 98;
+
+}
+
+.contenedorMenu {
+    margin-right: 1rem;
+    padding: 0.2rem;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.iniciasesion {
+    padding: 10px;
+    height: 60%;
+
+}
+
+.logoGti {
+    padding: 5px;
+    height: 80%;
+
+}
+
+
+
+.formulario {
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.contenedornombre {
+    text-align: initial;
+    text-decoration: none;
+    margin: 0.2rem;
+    width: 85%;
+    height: 2rem;
+    border: #2B0124 solid 2px;
+    border-radius: 5px;
+    background-color: #E1C7DD;
+    color: #2B0124;
+    font: 400 1rem Helvetica;
+}
+::-webkit-input-placeholder {
+    color: #2B0124;
+}
+.botonlogin {
+
+    font-family: Helvetica;
+    color: #660555;
+    width: 85%;
+    height: 2.2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 1rem;
+    border-radius: 8px;
+    position: relative;
+    box-shadow: #2B0124 1px 1px 1px;
+    position: relative;
+    background-color: #f1f1f1;
+
+
+}
+#contacto {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+.contacto {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.contacto_form {
+    width: 80%;
+    max-width: 400px;
+    background-color: #E1C7DD;
+    border-radius: 2rem;
+    opacity: 100%;
+    flex-direction: column;
+    margin:1rem auto;
+}
+.cn {
+    font-family: sans-serif;
+    color: #660555;
+    text-align: center;
+    font-size: 1.5rem;
+    border-bottom: 0;
+}
+.salida{
+    color:#2B0124;
+    font-size: 1.5rem;
+}
